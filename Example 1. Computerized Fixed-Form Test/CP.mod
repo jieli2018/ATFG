@@ -93,14 +93,14 @@ main{
   thisOplModel.generate(); 
   var myModel = thisOplModel;
 
-  cp.startNewSearch();
-  while (cp.next()){
-    var after = new Date();    
-  	writeln((after.getTime()-myModel.beforeTime)/1000, "\t", cp.getObjValue());
-  }    
-  cp.end();
+//  cp.startNewSearch();
+//  while (cp.next()){
+//    var after = new Date();    
+//  	writeln((after.getTime()-myModel.beforeTime)/1000, "\t", cp.getObjValue());
+//  }    
+//  cp.end();
   
-//  cp.solve();
+  cp.solve();
   writeln("----------items-----------")
   for(var p in myModel.Positions)
   	for(var i in myModel.Items) {
